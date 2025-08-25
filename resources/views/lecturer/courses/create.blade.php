@@ -21,21 +21,67 @@
             @csrf
 
             <div class="row">
+            <div class="row">
+              <!-- Course Title & Code -->
               <div class="col-md-6 mb-3">
                 <label class="form-label">Course Title</label>
-                <input type="text" name="title" class="form-control" required>
+                <select name="title" class="form-select" required>
+                  <option value="">-- SELECT COURSE --</option>
+                  <option value="INTRODUCTION TO COMPUTER SCIENCE">INTRODUCTION TO COMPUTER SCIENCE</option>
+                  <option value="COMPUTER PROGRAMMING I">COMPUTER PROGRAMMING I</option>
+                  <option value="COMPUTER PROGRAMMING II">COMPUTER PROGRAMMING II</option>
+                  <option value="OPERATING SYSTEM">OPERATING SYSTEM</option>
+                  <option value="DATA STRUCTURES">DATA STRUCTURES</option>
+                  <option value="DATABASE MANAGEMENT SYSTEM">DATABASE MANAGEMENT SYSTEM</option>
+                  <option value="SYSTEM ANALYSIS AND DESIGN">SYSTEM ANALYSIS AND DESIGN</option>
+                  <option value="COMPUTER ARCHITECTURE">COMPUTER ARCHITECTURE</option>
+                  <option value="COMPUTER NETWORKING">COMPUTER NETWORKING</option>
+                  <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+                  <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+                  <option value="HUMAN COMPUTER INTERACTION">HUMAN COMPUTER INTERACTION</option>
+                  <option value="PROJECT MANAGEMENT">PROJECT MANAGEMENT</option>
+                  <option value="CYBER SECURITY FUNDAMENTALS">CYBER SECURITY FUNDAMENTALS</option>
+                  <option value="COMPUTER GRAPHICS">COMPUTER GRAPHICS</option>
+                  <option value="ENTREPRENEURSHIP STUDIES">ENTREPRENEURSHIP STUDIES</option>
+                </select>
               </div>
 
               <div class="col-md-6 mb-3">
                 <label class="form-label">Course Code</label>
-                <input type="text" name="code" class="form-control" required>
+                <select name="code" class="form-select" required>
+                  <option value="">-- SELECT CODE --</option>
+                  <option value="COM111">COM111</option>
+                  <option value="COM112">COM112</option>
+                  <option value="COM121">COM121</option>
+                  <option value="COM122">COM122</option>
+                  <option value="COM211">COM211</option>
+                  <option value="COM212">COM212</option>
+                  <option value="COM221">COM221</option>
+                  <option value="COM222">COM222</option>
+                  <option value="COM311">COM311</option>
+                  <option value="COM312">COM312</option>
+                  <option value="COM321">COM321</option>
+                  <option value="COM322">COM322</option>
+                  <option value="COM411">COM411</option>
+                  <option value="COM412">COM412</option>
+                  <option value="COM421">COM421</option>
+                  <option value="COM422">COM422</option>
+                </select>
               </div>
             </div>
 
+            <!-- Level -->
             <div class="mb-3">
-              <label class="form-label">Level (e.g. ND1)</label>
-              <input type="text" name="level" class="form-control" required>
+              <label class="form-label">Level</label>
+              <select name="level" class="form-select" required>
+                <option value="">-- SELECT LEVEL --</option>
+                <option value="ND1">ND1</option>
+                <option value="ND2">ND2</option>
+                <option value="HND1">HND1</option>
+                <option value="HND2">HND2</option>
+              </select>
             </div>
+
 
             <button type="submit" class="btn btn-success">Save Course</button>
           </form>
